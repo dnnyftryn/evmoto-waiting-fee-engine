@@ -14,6 +14,8 @@ import com.example.demo.domain.PickupPoint;
 
 import lombok.Data;
 
+import jakarta.validation.constraints.NotNull;
+
 /**
  *
  * @author Danny Fitriyana
@@ -24,11 +26,15 @@ public class FeePreviewRequest {
 
     private OffsetDateTime arrivedAt;
 
+    @NotNull
     private OffsetDateTime endedAt;
 
+    @NotNull
     private EndReason endReason;
 
-     private PickupPoint pickupPoint;
+    @NotNull
+    private PickupPoint pickupPoint;
 
+    @NotNull
     private List<DriverPing> driverPings;
 }

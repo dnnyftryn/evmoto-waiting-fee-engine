@@ -7,7 +7,10 @@ package com.example.demo.dto.response;
 
 import com.example.demo.domain.FeeBreakdown;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
@@ -15,6 +18,9 @@ import lombok.Data;
  */
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class FeePreviewResponse {
     
     private FeeBreakdown feeBreakdown;
