@@ -22,7 +22,7 @@ import lombok.Data;
 @Data
 public class FeePreviewRequest {
 
-    private OffsetDateTime arrtivedAt;
+    private OffsetDateTime arrivedAt;
 
     private OffsetDateTime endedAt;
 
